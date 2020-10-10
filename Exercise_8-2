@@ -1,0 +1,24 @@
+# Exercise 8.2
+# Created in Jupyter notebook, some modifications to produce more
+# readable output when run in Python
+#
+#!/usr/bin/env python
+# coding: utf-8
+
+
+a = 'banana'
+
+print("Test string: '" + a + "', to count character: 'n'")
+
+# Count function
+def countf(word,letter):
+    count = 0
+    for char in word:
+        if char == letter:
+            count = count + 1
+    print("Use Count function: " + str(count))
+
+countf(a,'n')
+
+# Count string method
+print("Use Count string method: " + str(a.count('n')))
